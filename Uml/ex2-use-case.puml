@@ -1,0 +1,9 @@
+@startuml ex2-use-case
+left to right direction
+:User: --> (Programa): Informar o valor que recebe por horas de trabalho
+:User: --> (Programa): Informa quantas horas trabalha por mês
+note right 
+Multiplica o Valor que recebe por horas X O número de horas que trabalha por mês 
+end note
+:Programa: --> (User): Informa o Salário 
+@enduml

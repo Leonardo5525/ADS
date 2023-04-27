@@ -1,0 +1,31 @@
+@startuml diagrama_casoDeUso
+title Programa
+
+
+actor Usuário
+
+rectangle "Cadastro com conta" {
+  usecase "Entrar no programa"
+  usecase "Inserir e-mail cadastrado"
+  usecase "Inserir senha de sua conta"
+  
+}
+
+rectangle "Cadastro sem conta" {
+  usecase "Entrar no cadastrar-se"
+  usecase "Adicionar informações pessoais"
+  usecase "Cadastra-se no aplicativo"
+
+}
+
+usecase "Entrar em sua conta"
+
+Usuário --> (Entrar no programa)
+(Entrar no programa) --> (Inserir e-mail cadastrado)
+(Inserir e-mail cadastrado) --> (Inserir senha de sua conta)
+(Inserir senha de sua conta) --> (Entrar em sua conta)
+
+Usuário --> (Entrar no cadastrar-se)
+(Entrar no cadastrar-se) --> (Adicionar informações pessoais)
+(Adicionar informações pessoais) --> (Cadastra-se no aplicativo)
+(Cadastra-se no aplicativo) --> (Entrar em sua conta)

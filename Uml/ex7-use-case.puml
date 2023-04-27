@@ -1,0 +1,42 @@
+@startuml
+(Programa conversor) as (Use)
+
+User -> (Start): computer 
+User --> (Use)
+
+Use ---> (User): devolve valor todos os valores armazedos abaxio de 1 a 4
+
+note right of (Use)
+  PH * HT = salário bruto
+  salário bruto - 11% - 8% = salário líquido
+end note
+
+note "Adicionar o quanto recebe por hora = PH." as N1
+(Start) .. N1
+N1 .. (Use)
+
+note "Adicionar quantas horas trabalha no mẽs = HT." as N2
+(Start) .. N2
+N2 .. (Use)
+
+note "Adicionar os 11% retirados pelo IR." as N3
+(Start) .. N3
+N3 .. (Use)
+
+note "Adiciona os 8% retirados pelo INSS." as N4
+(Start) .. N4
+N4 .. (Use)
+
+note "1- Armazena 'salário bruto'" as N5
+(Use) .. N5
+
+note "2- Armazena 'Imposto de Renda = 8%'" as N6
+(Use) .. N6
+
+note "3- Armazena 'INSS = 11%'" as N7
+(Use) .. N7
+
+note "4- Armazena = 'salário líquido'." as N8
+(Use) .. N8
+
+@enduml

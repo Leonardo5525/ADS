@@ -1,0 +1,42 @@
+@startuml
+
+Socio1 --|> Socio
+Socio2 --|> Socio
+Socio3 --|> Socio
+
+class Socio {
+    + Nome: string
+    + Porcentagem: float
+}
+
+object Socio1{
+    Nome = "Bethoven"
+    Porcentagem = 17.5
+    }
+
+object Socio2{
+    Nome = "Altuve"
+    Porcentagem = 32.5
+    }
+
+object Socio3{
+    Nome = "Cabrera"
+    Porcentagem = 50
+    }
+
+Socio --|> lerSocio
+Socio --|> porcentagem_Socio
+object lerSocio {
+    + __call__(Socio): string
+  
+}
+object porcentagem_Socio {
+    + __call__(porcentagem_Socio): float
+  
+}
+note left
+Calcula o valor que cada Socio possui da empresa = valor da empresa X porcentagem
+end note
+
+
+@enduml

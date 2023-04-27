@@ -1,0 +1,10 @@
+@startuml
+start
+:Receba valores do usuário;
+:Nome dos 3 sócios;
+:Porcentagem que tem da empresa;
+:Valor da empresa;
+:Realiza o calculo = valor X porcentagem;
+:Devolve ao usuário o valor da porcentagem que cada usuário possui;
+stop 
+@enduml

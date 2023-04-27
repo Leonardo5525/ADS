@@ -1,0 +1,16 @@
+@startuml ex1-act-case
+start
+
+:Recebe valor;
+note right
+Usuário informa em metros
+end note
+:Converte para float;
+:Converte para centimetros; 
+note right
+multiplicar por 100
+end note
+:Exibir resultado;
+stop
+
+@enduml

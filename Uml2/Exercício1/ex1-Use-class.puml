@@ -1,0 +1,25 @@
+@startuml diagrama_casoDeUso
+title Calculo do valor que cada sócio possui da empresa
+
+actor Usuário
+
+rectangle Programa {
+  usecase "Adicionar o nome do Sócio"
+  usecase "Adicionar a cota que o Sócio possui da empresa"
+  usecase "Adicionar o valor da empresa"
+  usecase "Calculo"
+}
+
+Usuário --> (Adicionar o nome do Sócio)
+
+(Adicionar o nome do Sócio) --> (Adicionar a cota que o Sócio possui da empresa)
+
+(Adicionar a cota que o Sócio possui da empresa) --> (Adicionar o valor da empresa) 
+(Adicionar o valor da empresa) --> (Calculo) 
+
+note right of (Calculo)
+Realiza calculo = (porcentagem/100) X valor da empresa
+end note
+
+
+@enduml

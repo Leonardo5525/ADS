@@ -1,0 +1,27 @@
+@startuml
+(Programa conversor) as (Use)
+
+User -> (Start): computer 
+User --> (Use)
+
+Use ---> (User): devolve valor a ser pago excesso = 'Total a pagar'
+
+note right of (Use)
+  peso - MÁXIMO = EX
+  EX * MULTA = total a pagar
+end note
+
+note "Adiciona o peso total de peixe pescados." as N1
+(Start) .. N1
+N1 .. (Use)
+
+note "Peso máximo a ser pesado = MÁXIMO." as N2
+(Use) .. N2
+
+note "Excesso pescado = EX." as N3
+(Use) .. N3
+
+note "Multa de R$ 3,00 por quilo a mais = MULTA." as N4
+(Use) .. N4
+
+@enduml

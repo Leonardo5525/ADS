@@ -1,0 +1,13 @@
+@startuml
+(*) --> "Acesse aplicativo "
+
+if "Tem cadastro?" then
+  -->[Não] "Cadastrar-se"
+  --> "Adicionar informações pessoais"
+  -->[Entra no aplicativo](*)
+else
+  ->[Sim] "Acesso direto a sua conta"
+  -->[Entra no aplicativo] (*)
+endif
+
+@enduml

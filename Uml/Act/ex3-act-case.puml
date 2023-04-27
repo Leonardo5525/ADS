@@ -1,0 +1,16 @@
+@startuml ex3-act-case
+start
+
+:Recebe valor;
+note right
+Usuário informa a temperatura em Fahrenheit
+end note
+:Converte para float;
+:**Utiliza:** o valor recebido para o calculo de conversão para Celsius; 
+note right
+Faz calculo (Fahrenheit - 32)/ 1.8
+end note
+:Exibi resultado = "Temperatura em Celsius";
+stop
+
+@enduml

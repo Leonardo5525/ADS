@@ -1,0 +1,20 @@
+@startuml ex2-act-case
+start
+
+:Recebe valor;
+note right
+Usuário informa quanto recebe por hora
+end note
+:Recebe valor;
+note right
+Usuário informa quantas horas trabalha por mês
+end note
+:Converte para float;
+:**Utiliza:** quanto recebe por hora x por horas trabalhadas; 
+note right
+multiplicar horas trabalhadas X quanto recebe por hora
+end note
+:Exibir resultado = "salário do mês";
+stop
+
+@enduml

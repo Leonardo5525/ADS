@@ -1,0 +1,7 @@
+@startuml ex3-use-case
+:User: --> (Programa): Informa a temperatura em Fahrenheit
+note bottom
+Faz o calculo (Fahrenheit - 32) / 1.8
+end note
+:Programa: --> (User): Devolve o valor em Celsius
+@enduml

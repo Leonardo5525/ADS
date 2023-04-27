@@ -1,0 +1,8 @@
+@startuml ex1-use-case
+
+:User: --> (Programa): Informar metros
+note right 
+multiplica por 100
+end note
+:Programa: <-- (User): informa em centimetros
+@enduml

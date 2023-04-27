@@ -1,0 +1,8 @@
+@startuml ex3-use-case
+left to right direction
+:User: --> (Programa): Informa seu peso e altura
+note bottom
+**Faz o calculo**: peso / (altura²)
+end note
+:Programa: --> (User): Devolve o valor, o índice de massa corportal (IMC)
+@enduml
