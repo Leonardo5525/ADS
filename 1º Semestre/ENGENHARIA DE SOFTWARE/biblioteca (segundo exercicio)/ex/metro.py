@@ -1,4 +1,11 @@
-def metro_cent(x):
+def metros():
     x = int(input(f'Escolha uma medida em metros = '))
-    cent = x * 100
-    print(f'{x} metros será igual a {cent} centímetros.')
+    return x
+
+def calculo(medida):
+    return medida * 100
+
+def metro_cent():
+    medida = metros()
+    cent = calculo(medida)
+    print(f'{medida} metros será igual a {cent} centímetros.')
