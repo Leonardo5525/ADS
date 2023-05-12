@@ -1,16 +1,56 @@
-('Bem vindo ao Mercadinho Bigbo')
-i = 1
-cont = 1
-total = 0
+win = []
+unix = []
+lin = []
+net = []
+mac = []
+outro = []
+n = 0
+i = 0
+total = 0 
+print('Qual o melhor sistema operacional para uso em servidores? ')
 
-while i != 0:
-    i = float(input(f'Produto {cont}: R$ '))
-    total += i
-    cont += 1
+while True:
+    n = input('''
+----------------------------------
+As possíveis respostas são:
+1- Windows Server
+2- Unix
+3- Linux
+4- Netware
+5- Mac OS
+6- Outro
+0- sair
+-----------------------------------
+''' )
+    if n == '1':
+        win.append(n)
+    elif n == '2':
+        unix.append(n)
+    elif n == '3':
+        lin.append(n)
+    elif n == '4':
+        net.append(n)
+    elif n == '5':
+        mac.append(n)
+    elif n == '6':
+        outro.append(n)
+    elif n == '0':
+        break
+    i += 1
 
-print('-'*30)
-print(f'Total: R${total}')
-print('-'*30)
+total = len(win) + len(unix) + len(lin) + len(net) + len(mac) + len(outro)
 
-pagamento = float(input('Qual será sua quantia de pagamento: '))
-print(f'Troco: R$ {pagamento - total}')
+
+
+print(f'''
+Sistema Operacinal           Votos           %
+------------------          -------         ----
+Windows Server              {len(win)}          {(len(win) * 100)/total}
+Unix                        {len(unix)}         {(len(unix) * 100)/total}
+Linux                       {len(lin)}          {(len(lin) * 100)/total} 
+Netware                     {len(net)}          {(len(net) * 100)/total}
+Mac OS                      {len(mac)}          {(len(mac) * 100)/total}
+Outro                       {len(outro)}       {(len(outro) * 100)/total}
+------------------          --------       ------
+Total                       {total}
+''')
