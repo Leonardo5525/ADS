@@ -43,14 +43,14 @@ total = len(win) + len(unix) + len(lin) + len(net) + len(mac) + len(outro)
 
 
 print(f'''
-Sistema Operacinal           Votos           %
-------------------          -------         ----
-Windows Server              {len(win)}          {(len(win) * 100)/total}
-Unix                        {len(unix)}         {(len(unix) * 100)/total}
-Linux                       {len(lin)}          {(len(lin) * 100)/total} 
-Netware                     {len(net)}          {(len(net) * 100)/total}
-Mac OS                      {len(mac)}          {(len(mac) * 100)/total}
-Outro                       {len(outro)}       {(len(outro) * 100)/total}
-------------------          --------       ------
+Sistema Operacinal           Votos               %
+------------------          -------             ----
+Windows Server              {len(win)}\t\t\t{(len(win) * 100)/total}
+Unix                        {len(unix)}\t\t\t{(len(unix) * 100)/total}
+Linux                       {len(lin)}\t\t\t{(len(lin) * 100)/total} 
+Netware                     {len(net)}\t\t\t{(len(net) * 100)/total}
+Mac OS                      {len(mac)}\t\t\t{(len(mac) * 100)/total}
+Outro                       {len(outro)}\t\t\t{(len(outro) * 100)/total}
+------------------          --------            ------
 Total                       {total}
 ''')

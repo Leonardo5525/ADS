@@ -1,7 +1,7 @@
 from ex.metro import metro_cent
 from ex.salario import salario_mes
 from ex.fh import fh
-from ex.imc import imc
+from ex.imc import exercicio
 from ex.pescador import pescador
 from ex.inss import inss
 from ex.unimar import finale
@@ -16,7 +16,7 @@ while True:
     [4] IMC
     [5] Pescador
     [6] INSS
-    [7] Unimar
+    [7] UNIMAR
     [0] sair
     -----------------------------------
     ''')
@@ -27,7 +27,7 @@ while True:
     elif e == '3':
         fh()
     elif e == '4':
-        imc()
+        exercicio()
     elif e == '5':
         pescador()
     elif e == '6':

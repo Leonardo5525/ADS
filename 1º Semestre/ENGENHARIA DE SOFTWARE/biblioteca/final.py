@@ -4,6 +4,7 @@ from ex.fh import fh
 from ex.imc import imc
 from ex.pescador import pescador
 from ex.inss import inss
+from ex.unimar import finale
 
 while True:
     e = input('''
@@ -15,6 +16,7 @@ while True:
     [4] IMC
     [5] Pescador
     [6] INSS
+    [7] Unimar
     [0] sair
     -----------------------------------
     ''')
@@ -30,5 +32,7 @@ while True:
         pescador()
     elif e == '6':
         inss()
+    elif e == '7':
+        finale()
     elif e == '0':
         break
