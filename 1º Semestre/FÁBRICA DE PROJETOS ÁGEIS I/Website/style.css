@@ -1,0 +1,20 @@
+.logo img{
+
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
