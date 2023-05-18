@@ -1,15 +1,18 @@
 .logo img{
-
     top: 0;
     left: 0;
-    width: 10%;
-    height: 10%;
+    width: 40%;
+    height: 50%;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
-    background: #181818;
+    background-color: rgb(0, 140, 255);
     color: #fff;
     overflow: hidden;
 }
@@ -17,4 +20,93 @@ body{
 #wrapper{
     display: flex;
     flex-direction: row;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form{
+    width: 80%;
+    padding-bottom: 3rems;
+
+}
+
+#signin label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+sign .textinput{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#signin .primary-btn{
+    width: 100%;
+}
+
+/* Primary button */
+.primary-btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #181818;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    transition: background-color 0.5s;
+    
+}
+
+.primary-btn:hover{
+    background-color: gray;
+}
+
+#main-footer{
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding: 5rem;
+} 
+
+#main-footer a{
+    text-decoration: underline;
 }
