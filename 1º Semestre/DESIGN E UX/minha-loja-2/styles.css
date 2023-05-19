@@ -1,0 +1,13 @@
+.carousel-img{
+    height: 50vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-img-top{
+    height: 20vh;
+}

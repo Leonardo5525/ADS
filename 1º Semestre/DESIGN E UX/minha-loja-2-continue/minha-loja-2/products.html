@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">MinhaLoja</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+      <section id="produtos">
+        <h1>Produtos</h1>
+        <div id="lista-produtos" class="row">
+          
+        </div>
+      </section>
+    </div>
+</body>
+<script src="assets/js/lista-produtos.js"></script>
+<!-- <script>
+//   var listaProdutos = document.getElementById("lista-produtos");
+//   console.log(listaProdutos);
+//   console.log(listaProdutos.innerHTML+"<h2>Pokemon</h2>");
+ 
+//   dados = {
+//     "produtos":[
+//         {
+//             "nome":"Super Nintendo",
+//             "preco": 1499.00,
+//             "link": "https://produto.mercadolivre.com.br/MLB-1973203846-video-game-super-nintendo-branquinho-2controles2-cartuchos-_JM",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_801337-MLB52769863334_122022-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"Nintendo 3DS",
+//             "preco": 1910.00,
+//             "link": "https://www.mercadolivre.com.br/nintendo-3ds-cor-cosmo-black/p/MLB5325830",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_885374-MLA32735601599_112019-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"Playstation 2",
+//             "preco": 507.00,
+//             "link": "https://www.mercadolivre.com.br/sony-playstation-2-slim-standard-cor-charcoal-black/p/MLB5325921",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_967825-MLA40668457024_022020-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"Playstation 4",
+//             "preco": 2559.00,
+//             "link": "https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-god-of-war-ragnarok-bundle-cor-preto-onyx/p/MLB20914562",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_728865-MLA54949023053_042023-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"XBOX 360",
+//             "preco": 759.00,
+//             "link": "https://www.mercadolivre.com.br/microsoft-xbox-360-e-4gb-standard-cor-preto/p/MLB15187454",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_698455-MLA51441020923_092022-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"XBOX Series S",
+//             "preco": 2049.00,
+//             "link": "https://www.mercadolivre.com.br/microsoft-xbox-series-s-512gb-standard-cor-branco/p/MLB16650345",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_635605-MLA44492818317_012021-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"Polistation",
+//             "preco": 173.91,
+//             "link": "https://produto.mercadolivre.com.br/MLB-3597202610-videogame-gamestation-polistation-classico-retro-de-8-bits-cinza-_JM",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_788879-MLB69318332165_052023-O.webp",
+//             "ativo": true
+//         },
+//         {
+//             "nome":"Polistation",
+//             "preco": 173.91,
+//             "link": "https://produto.mercadolivre.com.br/MLB-3597202610-videogame-gamestation-polistation-classico-retro-de-8-bits-cinza-_JM",
+//             "img": "https://http2.mlstatic.com/D_NQ_NP_788879-MLB69318332165_052023-O.webp",
+//             "ativo": true
+//         }
+//     ]
+// };
+
+//   for(let p of dados.produtos){
+//      listaProdutos.innerHTML += `<div class="col-4">
+//                  <div class="card">
+//                    <img src="${p.img}" class="card-img-top" alt="...">
+//                    <div class="card-body">
+//                      <h5 class="card-title">${p.nome}</h5>
+//                      <p class="card-text">R$${p.preco}</p>
+//                      <a href="${p.link}" target="_blank" class="btn btn-primary">Detalhes</a>
+//                    </div>
+//                  </div>
+//                </div>`;    
+//   }
+
+  // for(let i=0;i<10;i++){
+  //   listaProdutos.innerHTML += `<div class="col-4">
+  //               <div class="card">
+  //                 <img src="assets/images/supernintendo.jfif" class="card-img-top" alt="...">
+  //                 <div class="card-body">
+  //                   <h5 class="card-title">Super Nintendo</h5>
+  //                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  //                   <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-supernintendo">Detalhes</a>
+  //                 </div>
+  //               </div>
+  //             </div>`;
+  // }
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>

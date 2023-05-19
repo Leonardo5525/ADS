@@ -1,0 +1,13 @@
+.titulo{
+    background-color: green;
+    border: 3px red dashed;
+}
+.titulo:hover{
+    background-color: orange;
+}
+h1{
+    background-color: #1515c491;
+}
+#titulo-principal{
+    background-color: rgba(0, 255, 0, 0.863);
+}

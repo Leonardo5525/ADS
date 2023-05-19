@@ -1,0 +1,60 @@
+{
+    "produtos":[
+        {
+            "nome":"Super Nintendo",
+            "preco": 1499.00,
+            "link": "https://produto.mercadolivre.com.br/MLB-1973203846-video-game-super-nintendo-branquinho-2controles2-cartuchos-_JM",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_801337-MLB52769863334_122022-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"Nintendo 3DS",
+            "preco": 1910.00,
+            "link": "https://www.mercadolivre.com.br/nintendo-3ds-cor-cosmo-black/p/MLB5325830",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_885374-MLA32735601599_112019-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"Playstation 2",
+            "preco": 507.00,
+            "link": "https://www.mercadolivre.com.br/sony-playstation-2-slim-standard-cor-charcoal-black/p/MLB5325921",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_967825-MLA40668457024_022020-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"Playstation 4",
+            "preco": 2559.00,
+            "link": "https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-god-of-war-ragnarok-bundle-cor-preto-onyx/p/MLB20914562",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_728865-MLA54949023053_042023-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"XBOX 360",
+            "preco": 759.00,
+            "link": "https://www.mercadolivre.com.br/microsoft-xbox-360-e-4gb-standard-cor-preto/p/MLB15187454",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_698455-MLA51441020923_092022-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"XBOX Series S",
+            "preco": 2049.00,
+            "link": "https://www.mercadolivre.com.br/microsoft-xbox-series-s-512gb-standard-cor-branco/p/MLB16650345",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_635605-MLA44492818317_012021-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"Polistation",
+            "preco": 173.91,
+            "link": "https://produto.mercadolivre.com.br/MLB-3597202610-videogame-gamestation-polistation-classico-retro-de-8-bits-cinza-_JM",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_788879-MLB69318332165_052023-O.webp",
+            "ativo": true
+        },
+        {
+            "nome":"Polistation",
+            "preco": 173.91,
+            "link": "https://produto.mercadolivre.com.br/MLB-3597202610-videogame-gamestation-polistation-classico-retro-de-8-bits-cinza-_JM",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_788879-MLB69318332165_052023-O.webp",
+            "ativo": true
+        }
+    ]
+}
