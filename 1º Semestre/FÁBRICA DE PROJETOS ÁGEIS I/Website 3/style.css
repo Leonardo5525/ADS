@@ -17,15 +17,24 @@
 }
 
 body{
-    background-color: #f4f4f4;
+    background-color: #b6acac;
+    background: #0c0ce94d;
 }
 
 /* forms */
 
+.left{
+    flex: 1;
+}
+
+.right{
+    flex: 1;
+}
+
 .container{
     border: 1px solid rgb(170, 170, 170);
     border-radius: 12px;
-    margin: 1rem 4rem 1rem 4rem;
+    margin: 1rem 2rem 1rem 2rem;
     box-shadow: 1px 5px 8px #0000003d;
     padding: 10px;
 }
@@ -61,6 +70,9 @@ body{
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    width: 90%;
+    
 }
 
 .input-box input:hover{
@@ -85,4 +97,36 @@ body{
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
+}
+
+.right .cadastrar-button button{
+    width: 90%;
+    background-color: rgb(66, 139, 189);
+    margin: -0.5rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+
+}
+
+.cadastrar-button{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+    
+}
+
+.cadastrar-button a{
+    color: #fff;
 }
