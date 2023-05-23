@@ -2,6 +2,7 @@ cadastros = open ('cadastros.txt', 'a')
 usuarios = []
 senhas = []
 i = 0
+found = ''
 
 while True:
   e = input('''
@@ -31,6 +32,7 @@ Bem vindo ao Unimar Park!
     for cadastro in cadastros:
       usuario = (cadastro.strip()).split(';')
       #usuario = cadastro.split(';')
+      print(usuario)
       if login == usuario[0] and senha == usuario[1]:
         found = True
         break
