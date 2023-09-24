@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário de Cadastro</title>
+		<style>
+			body {
+			  font-family: Arial, sans-serif;
+			  background-color: #f5f5f5;
+			  margin: 0;
+			  padding: 0;
+			}
+		  
+			.container {
+			  max-width: 600px;
+			  margin: 0 auto;
+			  padding: 20px;
+			  background-color: #ffffff;
+			  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			  border-radius: 5px;
+			}
+		  
+			.form-group {
+			  margin-bottom: 20px;
+			}
+		  
+			label {
+			  display: block;
+			  font-weight: bold;
+			  margin-bottom: 5px;
+			}
+		  
+			input[type="text"],
+			input[type="email"],
+			input[type="password"],
+			select,
+			textarea {
+			  width: 100%;
+			  padding: 10px;
+			  border: 1px solid #ccc;
+			  border-radius: 3px;
+			  box-sizing: border-box;
+			  font-size: 14px;
+			  outline-color:#0056b3;
+			}
+		  
+			textarea {
+			  resize: vertical;
+			}
+		  
+			button {
+			  padding: 10px 20px;
+			  background-color: #007bff;
+			  color: #ffffff;
+			  border: none;
+			  border-radius: 3px;
+			  font-size: 16px;
+			  cursor: pointer;
+			}
+		  
+			button:hover {
+			  background-color: #0056b3;
+			}
+
+            /* custom checkbox e radio */
+            
+            input[type="radio"],
+            input[type="checkbox"] {
+                appearance: none;
+                background: #fff;
+                border: 1px solid #ccc;
+                height: 1.8em;
+                width: 1.8em;
+                margin: 0 10px 0 30px;
+                border-radius: 100%;
+                vertical-align: text-bottom;
+                position: relative;
+            }
+
+            /* Remove o circulo dos checkboxes */
+            input[type="checkbox"] {
+                border-radius: 0;
+            }
+
+            /*  */
+            input[type="radio"]::before,
+            input[type="checkbox"]::before {
+                content: "";
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+                top: 0;
+            }
+
+            /* Centro do radio selecionado */
+            input[type="radio"]:checked::before {
+                border: 5px solid transparent;
+                border-radius: 100%;
+                background: #007bff;
+                margin: 4px;
+            }
+
+            /* checkmark shape */
+            input[type="checkbox"]:checked::before {
+                border-right: 5px solid #007bff;
+                border-bottom: 6px solid #007bff;
+                height: 90%;
+                width: 30%;
+                transform: rotate(50deg) translateY(-20%) translateX(-10%);
+            }
+          
+
+		  </style>
+	</head>
+	<body>
+		<div class="container">
+		<h1 style="text-align: center;">Formulário de Cadastro</h1>
+		<form method="post">
+			<div class="form-group">
+				<label for="txtNome">Nome:</label>
+				<input type="text" name="txtNome">
+			</div>
+			<div class="form-group">
+				<label>Senha:</label>
+				<input type="password" name="txtSenha">
+			</div>
+			<div class="form-group">
+				<label>OBS:</label>
+				<textarea cols="50" rows="5" name="txtObs"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Cidade:</label>
+				<select name="selCidade">
+					<option value="1">São Paulo</option>
+					<option value="2">Rio de Janeiro</option>
+					<option value="3" selected>Marília</option>
+					<option value="4">Pompéia</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Áreas Interesse:</label>
+				<label>			
+					<input type="checkbox" name="checkArea1" value="1">
+					Programação
+				</label>            
+				
+				<label>                    
+					<input type="checkbox" name="checkArea2" value="2">
+					Redes
+				</label>
+				<label>				                    
+					<input type="checkbox" name="checkArea3" value="3">
+					Banco de Dados
+				</label>
+				<label>					                    
+					<input type="checkbox" name="checkArea4" value="4">
+					Internet:
+				</label>
+			</div>
+			<div class="form-group">
+				<label>Cor Preferida:</label>
+                <label>			
+					<input type="radio" name="radCor" value="1">
+                    <span class="radiomark"></span>	
+					Amarelo
+				</label>
+				
+				<label>                    
+					<input type="radio" name="radCor" value="2">
+                    <span class="radiomark"></span>
+					Azul
+				</label>
+
+				<label>				                    
+					<input type="radio" name="radCor" value="3">
+                    <span class="radiomark"></span>
+					Branco
+				</label>
+
+				<label>					                    
+					<input type="radio" name="radCor" value="4">
+                    <span class="radiomark"></span>
+					Rosa
+				</label>
+
+                <label>					                    
+					<input type="radio" name="radCor" value="5">
+                    <span class="radiomark"></span>
+					Verde
+				</label>
+
+                <label>					                    
+					<input type="radio" name="radCor" value="6">
+                    <span class="radiomark"></span>
+					Vermelho
+				</label>
+
+			</div>
+
+			<button name="btnSub" type="submit">
+				Enviar Dados
+			</button>
+				
+			<button name="btnRes" type="reset">
+				Limpar Dados
+			</button>
+				
+			<br>
+			
+			
+		</form>
+		
+	</div>
+	</body>
+
+</html>
+
+

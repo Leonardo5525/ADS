@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Página UM</title>
+
+	</head>
+	<body>
+		<h1>Formulário de Cadastro</h1>
+		<form method="post">
+			<label for="txtNome">Nome:</label><br>
+			<input type="text" name="txtNome" size="30">
+			<br>
+			<label>Senha:</label><br>
+			<input type="password" name="txtSenha" size="8">
+			<br>
+			<label>OBS:</label><br>
+			<textarea cols="50" rows="5" name="txtObs"></textarea>
+			<br>
+			<label>Cidade:</label><br>
+			<select name="selCidade">
+				<option value="1">São Paulo</option>
+				<option value="2">Rio de Janeiro</option>
+				<option value="3" selected>Marília</option>
+				<option value="4">Pompéia</option>
+			</select>
+			<br>
+			<br>
+			<label>Áreas Interesse</label><br>
+			Programação:
+			<input type="checkbox" name="checkArea1" value="1">
+			<br>
+			Redes:
+			<input type="checkbox" name="checkArea2" value="2">
+			<br>
+			Banco de Dados:
+			<input type="checkbox" name="checkArea3" value="3">
+			<br>
+			Internet:
+			<input type="checkbox" name="checkArea4" value="4">
+			<br><br>
+			<label>Cor Preferida:</label><br>
+			Amarelo:<input type="radio" name="radCor" value="1"><br>
+			Azul:<input type="radio" name="radCor" value="2"><br>
+			Branco:<input type="radio" name="radCor" value="3"><br>
+			Rosa:<input type="radio" name="radCor" value="4"><br>
+			Verde:<input type="radio" name="radCor" value="5"><br>
+			Vermelho:<input type="radio" name="radCor" value="6"><br>
+			<br>
+			<br>
+			<button name="btnSub" type="submit">
+				Enviar Dados
+			</button>
+				<br>
+			<button name="btnRes" type="reset">
+				Limpar Dados
+			</button>
+				<br>
+			<br>
+			<label>E-mail</label><br>
+			<input type="email" name="txtEmail">
+			<br>
+					
+			
+			<label>Idade</label><br>
+			<input type="range" name="rgIdade" min="1" max="100">
+			<br>	
+			
+				
+			
+			<label>Idade</label><br>
+			<input type="number" name="nuIdade" min="1" max="100">
+			<br>	
+			
+			<label>Nascimento</label><br>
+			<input type="date" name="dtNasc">
+			<br>	
+			<br>	
+			<label>Site</label><br>
+			
+		</form>
+		
+		
+	</body>
+
+</html>
+
+

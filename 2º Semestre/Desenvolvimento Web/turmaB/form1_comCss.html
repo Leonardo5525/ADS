@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário de Cadastro</title>
+		<style>
+			body {
+			  font-family: Arial, sans-serif;
+			  background-color: #f5f5f5;
+			  margin: 0;
+			  padding: 0;
+			}
+		  
+			.container {
+			  max-width: 600px;
+			  margin: 0 auto;
+			  padding: 20px;
+			  background-color: #ffffff;
+			  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			  border-radius: 5px;
+			}
+		  
+			.form-group {
+			  margin-bottom: 20px;
+			}
+		  
+			label {
+			  display: block;
+			  font-weight: bold;
+			  margin-bottom: 5px;
+			}
+
+			input[type="radio"],
+            input[type="checkbox"] {               
+                margin: 0 10px 0 30px;               
+            }
+		  
+			input[type="text"],
+			input[type="email"],
+			input[type="password"],
+			select,
+			textarea {
+			  width: 100%;
+			  padding: 10px;
+			  border: 1px solid #ccc;
+			  border-radius: 3px;
+			  box-sizing: border-box; 
+			  /* border-box: As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.
+			  */
+			  outline-color:#0056b3;
+			  font-size: 14px;
+			}
+		  
+			textarea {
+			  resize: vertical; /*altura*/
+			}
+		  
+			button {
+			 /* top | right | bottom | left */
+			 /* top e bottom | left e right */
+			  padding: 10px 20px;
+			  background-color: #007bff;
+			  color: #ffffff;
+			  border: none;
+			  border-radius: 3px;
+			  font-size: 16px;
+			  cursor: pointer;
+			}
+		  
+			button:hover {
+			  background-color: #0056b3;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="container">
+		<h1 style="text-align: center;">Formulário de Cadastro</h1>
+		<form method="post">
+			<div class="form-group">
+				<label for="txtNome">Nome:</label>
+				<input type="text" name="txtNome">
+			</div>
+			<div class="form-group">
+				<label>Senha:</label>
+				<input type="password" name="txtSenha">
+			</div>
+			<div class="form-group">
+				<label>OBS:</label>
+				<textarea cols="50" rows="5" name="txtObs"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Cidade:</label>
+				<select name="selCidade">
+					<option value="1">São Paulo</option>
+					<option value="2">Rio de Janeiro</option>
+					<option value="3" selected>Marília</option>
+					<option value="4">Pompéia</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Áreas Interesse:</label>
+				<label>				
+					<input type="checkbox" name="checkArea1" value="1">
+					Programação
+				</label>
+				
+				<label>
+					<input type="checkbox" name="checkArea2" value="2">
+					Redes
+				</label>
+				<label>				
+					<input type="checkbox" name="checkArea3" value="3">
+					Banco de Dados
+				</label>
+				<label>					
+					<input type="checkbox" name="checkArea4" value="4">
+					Internet:
+				</label>
+			</div>
+			<div class="form-group">
+				<label>Cor Preferida:</label>
+				<label><input type="radio" name="radCor" value="1">Amarelo</label>
+				<label><input type="radio" name="radCor" value="2">Azul</label>
+				<label><input type="radio" name="radCor" value="3">Branco</label>
+				<label><input type="radio" name="radCor" value="4">Rosa</label>
+				<label><input type="radio" name="radCor" value="5">Verde</label>
+				<label><input type="radio" name="radCor" value="6">Vermelho</label>
+			</div>
+
+			<button name="btnSub" type="submit">
+				Enviar Dados
+			</button>
+				
+			<button name="btnRes" type="reset">
+				Limpar Dados
+			</button>
+				
+			
+			
+			
+		</form>
+		
+	</div>
+	</body>
+
+</html>
+
+
